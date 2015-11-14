@@ -42,12 +42,7 @@ public class Engine extends Thread {
 					sleep(window.time);
 					window.spotView.setVisible(false);
 				}
-				/*console
-				System.out.println("Показване на живот на " + liveShow + "точки");
-				System.out.println("Показване на забавяне на " + slowDownShow + "точки");
-				System.out.println("Точки " + window.points);
-				System.out.println("Интервал" + window.time);
-				*/
+			
 				if (!window.clicked) {
 					window.lives.set(window.lives.get() - 1);
 					window.livesText.setText(String.valueOf((int)window.lives.get()));
